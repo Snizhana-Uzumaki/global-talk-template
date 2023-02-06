@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    /*Colors & Shadows*/
+
+        /*kind of cyan*/
+            --cyan: #5996A5;
+            --cyan-dark: #2B788B;
+            --cyan-light: #C3DCE3;
+
+        /*kind of pink*/
+            --pink: #A15993;
+            --pink-dark: #945069;
+            --pink-light: #F2D4DC;
+
+        /*kind of grey*/
+            --grey-light: #F6F5F4;
+            --grey-medium: #E0E0E0;
+            --grey-icon: #BABABA;
+            --grey-dark: #585858;
+
+        /*similar*/    
+        --balck: #000000;
+        --green: #639B6D;
+        --red: #A95151;
+        --yellow: #C4A24C;
+        --Orange: #CB5B43;
+
+        /*shadows*/
+        --shadows:0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+
+    /*Fonts*/
+
+        /*headings*/
+            --heading-one: 400 56px/56px 'Arial';
+            --heading-two: 400  48px/48px 'Arial';
+            --heading-three: 400 32px/32px 'Arial';
+            --heading-four: 400 24px/24px 'Arial';
+
+        /*text*/
+            --body-one: 600 18px/25px 'Arial';
+            --body-two: 600 16px/22px 'Arial';
+            --body-three: 600 14px/20px 'Arial';
+            --body-four: 600 12px/17px 'Arial';
+
+        /*button*/
+            --button-one: 700 18px/25px 'Arial';
+            --button-two: 700 16x/22px 'Arial';
+
+        /*links*/
+            --link-one: 16px/20px 'Arial';
+            --link-two: 14px/20px 'Arial';
+  }
+
+.site-nabigation{
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1D1D1D;
+}
