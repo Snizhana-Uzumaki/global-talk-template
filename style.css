@@ -21,7 +21,7 @@
             --grey-icon: #BABABA;
             --grey-dark: #585858;
 
-        /*similar*/    
+        /*single*/    
         --balck: #000000;
         --green: #639B6D;
         --red: #A95151;
@@ -38,12 +38,14 @@
             --heading-two: 400  48px/48px 'Arial';
             --heading-three: 400 32px/32px 'Arial';
             --heading-four: 400 24px/24px 'Arial';
+            --heading-five: 400 16px/24px 'Arial';
 
         /*text*/
             --body-one: 600 18px/25px 'Arial';
             --body-two: 600 16px/22px 'Arial';
             --body-three: 600 14px/20px 'Arial';
-            --body-four: 600 12px/17px 'Arial';
+            --body-four: 600 12px/16px 'Arial';
+            --body-five: 600 12px/8px 'Arial';
 
         /*button*/
             --button-one: 700 18px/25px 'Arial';
@@ -55,40 +57,65 @@
     /*Padding and margin*/
         --padding-header-one: 9px 20px;
   }
+/*general style*/
+    a{
+        text-decoration:none;
+    }
+    li{
+        list-style: none;
+    }
 
-.site-navigation{
-    padding: var(--padding-header-one);
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #1D1D1D;
-    margin: 0 auto;
-    text-decoration: none;
-}
-.logo-title, .user-account, .menu-list-icon{
-    font:var(--body-three);
-    text-align: center;
-    margin: auto 0;
+    .site-navigation{
+        background-color: var(--grey-light);
+        padding: var(--padding-header-one);
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--grey-medium);
+        margin: 0 auto;
+        text-decoration: none;
+    }
+    .user-account{
+        font:var(--body-four);
+        margin: auto 0;
+    }
 
-}
-.logo-title, .menu-list-icon{
-    color: var(--balck);
-}
-.user-account{
-    padding: 0 14px 0 0;
-    display: flex;
-    gap: 4px;
-    position: relative;
-    color:var(--grey-dark);
-}
-.avatar, .user-name, .profile-list-icon{
-    text-align: center;
-    margin: auto 0;
-}
+    .menu-list-icon{
+        font:var(--heading-four);
+        margin: auto 0;
+        color: var(--balck);
+    }
+    .logo-title{
+        font: var(--heading-five);
+        margin: auto 0;
+        color: var(--balck);
+    }
+    .user-account-link{
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+    }
+    .user-name, .profile-list-icon{
+        align-self: center;
+        color: var(--grey-dark);
+    }
+    .user-name{
+        font: var(--body-four);
+    }
+    .profile-list-icon{
+        font: var(--body-five);
+    }
 
-.profile-list-icon{
-    position: absolute;
-    font:var(--body-three);
-    right: 0;
-    top: 10%;
-    color: var(--grey-dark);
-}
+
+    .ad-info-list{
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        margin: 0 auto;
+    }
+    .ad-info-blok{
+        text-align: center;
+        padding: 40px 20px 0 20px;
+    }
+    .odd{
+        background-color:var(--grey-light);
+    }
