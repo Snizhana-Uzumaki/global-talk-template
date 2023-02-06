@@ -52,11 +52,43 @@
         /*links*/
             --link-one: 16px/20px 'Arial';
             --link-two: 14px/20px 'Arial';
+    /*Padding and margin*/
+        --padding-header-one: 9px 20px;
   }
 
-.site-nabigation{
-    padding: 18px 20px;
+.site-navigation{
+    padding: var(--padding-header-one);
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #1D1D1D;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.logo-title, .user-account, .menu-list-icon{
+    font:var(--body-three);
+    text-align: center;
+    margin: auto 0;
+
+}
+.logo-title, .menu-list-icon{
+    color: var(--balck);
+}
+.user-account{
+    padding: 0 14px 0 0;
+    display: flex;
+    gap: 4px;
+    position: relative;
+    color:var(--grey-dark);
+}
+.avatar, .user-name, .profile-list-icon{
+    text-align: center;
+    margin: auto 0;
+}
+
+.profile-list-icon{
+    position: absolute;
+    font:var(--body-three);
+    right: 0;
+    top: 10%;
+    color: var(--grey-dark);
 }
