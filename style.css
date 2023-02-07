@@ -19,7 +19,8 @@
             --grey-light: #F6F5F4;
             --grey-medium: #E0E0E0;
             --grey-icon: #BABABA;
-            --grey-dark: #585858;
+            --grey-dark-one:#757575;
+            --grey-dark-two: #585858;
 
         /*single*/    
         --balck: #000000;
@@ -34,26 +35,29 @@
     /*Fonts*/
 
         /*headings*/
-            --heading-one: 400 56px/56px 'Arial';
-            --heading-two: 400  48px/48px 'Arial';
-            --heading-three: 400 32px/32px 'Arial';
-            --heading-four: 400 24px/24px 'Arial';
-            --heading-five: 400 16px/24px 'Arial';
+            --heading-one: 400 56px/56px 'Dela Gothic One';
+            --heading-two: 400  48px/48px 'Dela Gothic One';
+            --heading-three: 400 32px/32px 'Dela Gothic One';
+            --heading-four: 400 24px/24px 'Dela Gothic One';
+            --heading-five: 400 16px/24px 'Dela Gothic One';
+            --heading-four: 400 20px/20px 'Dela Gothic One';
 
         /*text*/
-            --body-one: 600 18px/25px 'Arial';
-            --body-two: 600 16px/22px 'Arial';
-            --body-three: 600 14px/20px 'Arial';
-            --body-four: 600 12px/16px 'Arial';
-            --body-five: 600 12px/8px 'Arial';
+            --body-one: 600 18px/25px 'Montserrat';
+            --body-two: 600 16px/22px 'Montserrat';
+            --body-three: 600 14px/20px 'Montserrat';
+            --body-four: 600 12px/16px 'Montserrat';
+            --body-five: 600 12px/8px 'Montserrat';
 
         /*button*/
-            --button-one: 700 18px/25px 'Arial';
-            --button-two: 700 16x/22px 'Arial';
+            --button-one: 700 18px/25px 'Montserrat';
+            --button-two: 700 16x/22px 'Montserrat';
+            --button-three: 700 12x/12px 'Montserrat';
+            --button-four:700 14px/14px 'Montserrat';
 
         /*links*/
-            --link-one: 16px/20px 'Arial';
-            --link-two: 14px/20px 'Arial';
+            --link-one: 16px/20px 'Montserrat';
+            --link-two: 14px/20px 'Montserrat';
     /*Padding and margin*/
         --padding-header-one: 9px 20px;
   }
@@ -66,13 +70,14 @@
     }
 
     .site-navigation{
+        position: relative;
         background-color: var(--grey-light);
         padding: var(--padding-header-one);
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid var(--grey-medium);
-        margin: 0 auto;
         text-decoration: none;
+        box-sizing:border-box;
     }
     .user-account{
         font:var(--body-four);
@@ -88,6 +93,11 @@
         font: var(--heading-five);
         margin: auto 0;
         color: var(--balck);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
     }
     .user-account-link{
         display: flex;
@@ -96,7 +106,7 @@
     }
     .user-name, .profile-list-icon{
         align-self: center;
-        color: var(--grey-dark);
+        color: var(--grey-dark-one);
     }
     .user-name{
         font: var(--body-four);
@@ -113,9 +123,59 @@
         margin: 0 auto;
     }
     .ad-info-blok{
+        box-sizing: border-box;
         text-align: center;
         padding: 40px 20px 0 20px;
     }
+    
     .odd{
         background-color:var(--grey-light);
+    }
+    .blok-discription-one{
+        font: var(--button-three);
+        color: var( --cyan-dark);
+    }
+    .blok-main-title{
+        padding:8px 0 0 0 ;
+        font: var(--heading-three);
+    }
+    .blok-description-two{
+        font:var( --body-four);
+        padding: 12px 0 20px 0;
+        color: var(--grey-dark-one);
+    }
+    .blok-buttom{
+        font: var(--button-four);
+        color: var(--cyan-dark);
+        padding: 12px 20px;
+        background-color: var(--cyan-light);
+        border-radius: 100px;
+    }
+    .ad-info-blok-learning-points{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 20px 0;
+    }
+    .popular-word, .mini-games{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .popular-words-icon, .mini-games-icon{
+        color:var(--cyan-dark);
+        font: var(--heading-four);
+    }
+    .popular-words-number,.mini-games-number{
+        font: var(--heading-four);
+    }
+    .popular-words-plus, .mini-games-plus{
+        color:var(--cyan-dark);
+    }
+    .points-divider{
+        border-left:1px solid var(--grey-medium);
+    }
+    .popular-words-name, .mini-games-name{
+        color: var(--grey-dark-two);
     }
