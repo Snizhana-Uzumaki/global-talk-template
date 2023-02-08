@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header class="site-nabigation">
-        <span class="menu-close-icon"><a href="">icon</a></span>
-        <h1 class="logo-title">GlobalTalk</h1>
-        <div class="user-account">
+    <header class="site-navigation">
+        <a class="menu-list-icon" href="home_page.html">
+            <iconify-icon icon="ic:twotone-close"></iconify-icon>
+        </a>
+    <h1 class="logo-title">GlobalTalk</h1>
+    <div class="user-account">
+        <a class="user-account-link" href="">
             <img class="avatar" src="user_avatar.svg" alt="user avatar">
             <span class="user-name">Alex</span>
-            <span class="profile-list-icon"><a href="">icon</a></span>
-        </div>
-    </header>
+            <span class="profile-list-icon"><iconify-icon icon="mdi:menu-down-outline"></iconify-icon></span>
+        </a>
+    </div>
+</header>
     <nav class="site-menu">
         <ul class="site-menu-blok">
-            <li><a class="site-menu-blok-components">Home</a></li>
-            <li><a class="site-menu-blok-components">Textbook</a></li>
-            <li><a class="site-menu-blok-components">Statistics</a></li>
-            <li><a class="site-menu-blok-components">Sprint</a></li>
-            <li><a class="site-menu-blok-components">Audio-call</a></li>
+            <li class="site-menu-blok-components"><a class="site-menu-blok-components-link active" href="">Home</a></li>
+            <li class="site-menu-blok-components"><a class="site-menu-blok-components-link" href="">Textbook</a></li>
+            <li class="site-menu-blok-components"><a class="site-menu-blok-components-link" href="">Statistics</a></li>
+            <li class="site-menu-blok-components"><a class="site-menu-blok-components-link" href="">Sprint</a></li>
+            <li class="site-menu-blok-components"><a class="site-menu-blok-components-link" href="">Audio-call</a></li>
         </ul>
     </nav>
 </body>

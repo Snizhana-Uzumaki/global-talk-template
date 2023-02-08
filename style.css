@@ -53,8 +53,8 @@
             --body-six: 600 12px/140% 'Montserrat';
             --body-seven: 600 12px/100% 'Montserrat';
             --body-eight: 600 10px/100% 'Montserrat';
+            --body-nine: 600 16px/100% 'Montserrat';
         
-
         /*button*/
             --button-one: 700 18px/25px 'Montserrat';
             --button-two: 700 16x/22px 'Montserrat';
@@ -305,4 +305,31 @@
         text-decoration-line:underline;
         font: var(--body-eight);
         color: var(--grey-dark-one);
+    }
+/*menu_page*/
+.site-menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+    .site-menu-blok{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+        margin: 0 auto;
+        margin-left: auto;
+    margin-right: auto;
+    }
+    .site-menu-blok-components{
+        text-align: center;
+    }
+    .site-menu-blok-components-link{
+        font:  var( --body-nine);
+        color: var(--grey-dark-one);
+    }
+    .site-menu-blok-components-link.active{
+        color: var(--cyan-dark);
     }
