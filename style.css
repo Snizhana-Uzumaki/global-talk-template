@@ -65,19 +65,30 @@
             --link-one: 16px/20px 'Montserrat';
             --link-two: 14px/20px 'Montserrat';
     /*Padding*/
-        --padding-header-one: 9px 20px;
-        --padding-ad-info-one:40px 20px 0 20px;
-        --padding-ad-info-two:8px 0 0 0;
-        --padding-ad-info-three:12px 0 20px 0;
-        --padding-ad-info-four:12px 20px;
-        --padding-ad-info-five:20px 0;
-
+        --padding-one:40px 20px 0 20px;
+        --padding-two:12px 20px;
+        --padding-three: 0 0 40px 0;
+        --padding-four: 18px 20px;
+        --padding-five: 4% 0 0 0;
+        --padding-six: 20px 0 40px 0;
+        --padding-seven: 84px 30.5px 14px 30.5px;
+        --padding-eight: 84px 45.5px 14px 45.5px;
+        --padding-nine: 40px 0 40px;
+        --padding-ten: 0 0 0 40px;
     /*Gap*/
         --gap-one: 4px;
         --gap-two:40px;
+        --gap-three:20px;
+        --gap-four: 12px;
+        --gap-five: 115px;
+        --gap-six: 16px;
+        --gap-seven: 31px;
     /*Margin*/
         --margin-one: 0 auto;
-  }
+    /*wigth*/
+        --line-width: 80%; 
+    }
+
 /*general style*/
     a{
         text-decoration:none;
@@ -94,14 +105,15 @@
         box-sizing:border-box;
 
         background-color: var(--grey-light);
-        padding: var(--padding-header-one);
+        padding: var( --padding-four);
         border-bottom: 1px solid var(--grey-medium);
     }
     .menu-list-icon{
-        color: var(--balck);
-        font:var(--heading-four);
         display: flex;
         align-items: center;
+
+        color: var(--balck);
+        font:var(--heading-four);
     }
     .logo-title{
         position: absolute;
@@ -147,9 +159,9 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 
-    padding: var(--padding-ad-info-one);
+    gap: var(--gap-three);
+    padding: var(--padding-one);
 }
 .odd{
     background-color:var(--grey-light);
@@ -162,12 +174,13 @@
     margin: var(--margin-one);
 }
 .ad-info-list:last-child{
-    padding: 0 0 40px 0;
+    padding: var(--padding-three);
 }
 .ad-info-block-text{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+
+    gap: var(--gap-four);
 }
 .meaning-platform{
     font: var(--button-three);
@@ -184,7 +197,7 @@
     color: var(--grey-dark-one);
 }
 .ad-info-block-buttom{
-    padding: var(--padding-ad-info-four);
+    padding: var(--padding-two);
 }
 .block-buttom{
     border-radius: 100px;
@@ -193,7 +206,7 @@
 
     font: var(--button-four);
     color: var(--cyan-dark);
-    padding: var(--padding-ad-info-four);
+    padding: var(--padding-two);
     background-color: var(--cyan-light);
 }
 .ad-info-block-learning-points{
@@ -224,12 +237,13 @@
     border-left:1px solid var(--grey-medium);
 }
 .ad-info-block-game-points-conteiner{
-    padding: 4% 0 0 0;
+    padding: var(--padding-five);
 }
 .ad-info-block-game-points{
     display: flex;
     justify-content: space-around;
-    padding: 20px 0 40px 0;
+
+    padding: var(--padding-six);
 }
 .sprint, .audio-call{
     position: relative;  
@@ -240,17 +254,17 @@
     top: -25%;
 }
 .sprint-name {
-    padding: 84px 30.5px 14px 30.5px;
     border-radius: 14px;
 
+    padding: var(--padding-seven);
     font: var(--button-four);
     background-color: var(--pink-light);
     color: var(--pink-dark);
 }
 .audio-call-name{
-    padding: 84px 45.5px 14px 45.5px;
     border-radius: 14px;
 
+    padding: var(--padding-eight);
     font: var(--button-four);
     background-color: var(--cyan-light);
     color: var(--cyan-dark);
@@ -266,19 +280,22 @@
     .footer{
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        
+        gap: var(--gap-three);
         background-color: var(--grey-light);
-        padding: 40px 0 40px 0;
+        padding: var(--padding-nine);
     }
     .footer-navigation{
         display: flex;
-        gap: 115px;
-        padding: 0 0 0 40px;
+
+        gap: var(--gap-five);
+        padding: var(--padding-ten);
     }
     .footer-navigation-site-page, .footer-navigation-tutors{
         display: flex;
-        gap: 16px;
         flex-direction: column;
+
+        gap: var(--gap-six);
     }
     .site-page-component, .tutors-component{
         font: var(--body-seven);
@@ -286,27 +303,29 @@
     }
     .line {
         border-bottom: 1px solid var(--grey-medium);
-        width: 80%;
         align-self: center;
 
-
+        width: var(--line-width);
     }
     .social-networks{
         display: flex;
         justify-content: center;
-        gap: 31px;
+        
+        gap: var(--gap-seven);
     }
     .github, .gt, .youtube{
         color: var(--grey-icon);
         font: var(--heading-eight);
     }
     .company-info{
-        font: var(--body-eight);
         text-align: center;
+
+        font: var(--body-eight);
         color: var(--grey-dark-one);
     }
     .globaltalk-link{
         text-decoration-line:underline;
+
         font: var(--body-eight);
         color: var(--grey-dark-one);
     }
@@ -322,10 +341,8 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        gap: 32px;
-        margin: 0 auto;
-        margin-left: auto;
-    margin-right: auto;
+
+        gap: var(--gap-seven);
     }
     .site-menu-blok-components{
         text-align: center;
