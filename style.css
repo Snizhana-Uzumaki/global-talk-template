@@ -100,6 +100,8 @@
     .menu-list-icon{
         color: var(--balck);
         font:var(--heading-four);
+        display: flex;
+        align-items: center;
     }
     .logo-title{
         position: absolute;
@@ -266,7 +268,7 @@
         flex-direction: column;
         gap: 20px;
         background-color: var(--grey-light);
-        padding: 40px 0 0 0;
+        padding: 40px 0 40px 0;
     }
     .footer-navigation{
         display: flex;
@@ -283,9 +285,11 @@
         color: var(--grey-dark-one);
     }
     .line {
-        border-bottom: 1px solid var(--grey-medium); 
-        max-width: 80%;
-        margin: 0 auto;
+        border-bottom: 1px solid var(--grey-medium);
+        width: 80%;
+        align-self: center;
+
+
     }
     .social-networks{
         display: flex;
