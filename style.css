@@ -35,56 +35,59 @@
     /*Fonts*/
 
         /*headings*/
-            --heading-one: 400 56px/56px 'Dela Gothic One';
-            --heading-two: 400  48px/48px 'Dela Gothic One';
-            --heading-three: 400 32px/32px 'Dela Gothic One';
-            --heading-four: 400 24px/24px 'Dela Gothic One';
-            --heading-five: 400 16px/100% 'Dela Gothic One';
-            --heading-six: 400 32px/100% 'Dela Gothic One';
-            --heading-seven: 400 20px/100% 'Dela Gothic One';
-            --heading-eight: 400 24px/100% 'Dela Gothic One';
+            --heading-xxl: 400 56px/56px 'Dela Gothic One';
+            --heading-xl: 400  48px/48px 'Dela Gothic One';
+
+            --heading-l-one: 400 32px/32px 'Dela Gothic One';
+            --heading-l-two: 400 32px/100% 'Dela Gothic One';
+
+            --heading-m-one: 400 24px/24px 'Dela Gothic One';
+            --heading-m-two: 400 24px/100% 'Dela Gothic One';
+
+            --heading-s: 400 20px/100% 'Dela Gothic One';
+            --heading-xs: 400 16px/100% 'Dela Gothic One';
 
         /*text*/
-            --body-one: 600 18px/25px 'Montserrat';
-            --body-two: 600 16px/22px 'Montserrat';
-            --body-three: 600 14px/20px 'Montserrat';
-            --body-four: 600 12px/17px 'Montserrat';
-            --body-five: 600 14px/140% 'Montserrat';
-            --body-six: 600 12px/140% 'Montserrat';
-            --body-seven: 600 12px/100% 'Montserrat';
-            --body-eight: 600 10px/100% 'Montserrat';
-            --body-nine: 600 16px/100% 'Montserrat';
+            --body-xxl: 600 18px/25px 'Arial';
+
+            --body-xl-one: 600 16px/22px 'Arial';
+            --body-xl-two: 600 16px/100% 'Arial';
+
+            --body-l-one: 600 14px/20px 'Arial';
+            --body-l-two: 600 14px/140% 'Arial';
+
+            --body-m-one: 600 12px/17px 'Arial';
+            --body-m-two: 600 12px/140% 'Arial';
+            --body-m-three: 600 12px/100% 'Arial';
+
+            --body-s: 600 10px/100% 'Arial';
+        
         
         /*button*/
-            --button-one: 700 18px/25px 'Montserrat';
-            --button-two: 700 16x/22px 'Montserrat';
-            --button-three: 700 12x/100% 'Montserrat';
-            --button-four: 700 14x/100% 'Montserrat';
+            --button-l: 700 18px/25px 'Arial';
+            --button-m: 700 16px/22px 'Arial';
+            --button-s: 700 14px/100% 'Arial';
+            --button-xs: 700 12px/100% 'Arial';
 
         /*links*/
-            --link-one: 16px/20px 'Montserrat';
-            --link-two: 14px/20px 'Montserrat';
+            --link-one: 16px/20px 'Arial';
+            --link-two: 14px/20px 'Arial';
     /*Padding*/
-        --padding-one:40px 20px 0 20px;
-        --padding-two:12px 20px;
-        --padding-three: 0 0 40px 0;
-        --padding-four: 18px 20px;
-        --padding-five: 4% 0 0 0;
-        --padding-six: 20px 0 40px 0;
-        --padding-seven: 84px 30.5px 14px 30.5px;
-        --padding-eight: 84px 45.5px 14px 45.5px;
-        --padding-nine: 40px 0 40px;
-        --padding-ten: 0 0 0 40px;
+        --padding-lateral:40px 20px 0 20px;
+        --padding-header: 9px 20px;
+
+        --padding-footer-up-down: 40px 0;
+        --padding-footer: 0 0 0 40px;
+        
+        --padding-buttom:12px 20px;
+        
+        --padding-sprint-size: 84px 30px 14px 30px;
+        --padding-audio-call-size: 84px 45px 14px 45px;
     /*Gap*/
-        --gap-one: 4px;
-        --gap-two:40px;
-        --gap-three:20px;
-        --gap-four: 12px;
-        --gap-five: 115px;
-        --gap-six: 16px;
-        --gap-seven: 31px;
+        --gap-main-info-block:20px;
+        --gap-footer-list: 16px;
     /*Margin*/
-        --margin-one: 0 auto;
+        --margin-center: 0 auto;
     /*wigth*/
         --line-width: 80%; 
     }
@@ -105,7 +108,7 @@
         box-sizing:border-box;
 
         background-color: var(--grey-light);
-        padding: var( --padding-four);
+        padding: var( --padding-header);
         border-bottom: 1px solid var(--grey-medium);
     }
     .menu-list-icon{
@@ -113,7 +116,7 @@
         align-items: center;
 
         color: var(--balck);
-        font:var(--heading-four);
+        font:var(--heading-m-two);
     }
     .logo-title{
         position: absolute;
@@ -123,18 +126,18 @@
         transform: translate(-50%, -50%);
 
         color: var(--balck);
-        font: var(--heading-five);
-        margin: var(--margin-one);
+        font: var(--heading-xs);
+        margin: var(--margin-center);
     }
     .user-account{
-        font:var(--body-seven);
+        font:var(--body-m-three);
     }
     .user-account-link{
         display: flex;
         justify-content: center;
         align-items: flex-end;
 
-        gap: var(--gap-one);
+        gap: 4px;
     }
     .user-name, .profile-list-icon{
         align-self: center;
@@ -142,78 +145,78 @@
         color: var(--grey-dark-one);
     }
     .user-name{
-        font: var(--body-four);
+        font: var(--body-m-one);
     }
     .profile-list-icon{
-        font: var(--body-five);
+        font: var(--body-l-two);
     }
-/*ad-info*/
-.ad-info-list{
+/*main-info*/
+.main-info-list{
     display: flex;
     justify-content: center;
     flex-direction:column;
 
-    margin: var(--margin-one);
+    margin: var(--margin-center);
 }
-.ad-info-block{
+.main-info-block{
     text-align: center;
     display: flex;
     flex-direction: column;
 
-    gap: var(--gap-three);
-    padding: var(--padding-one);
+    gap: var(--gap-main-info-block);
+    padding: var(--padding-lateral);
 }
 .odd{
     background-color:var(--grey-light);
 }
-.ad-info-list{
+.main-info-list{
     display: flex;
     justify-content: center;
     flex-direction:column;
 
-    margin: var(--margin-one);
+    margin: var(--margin-center);
 }
-.ad-info-list:last-child{
-    padding: var(--padding-three);
+.main-info-list:last-child{
+    padding: 0 0 40px 0;
 }
-.ad-info-block-text{
+.main-info-block-text{
     display: flex;
     flex-direction: column;
 
-    gap: var(--gap-four);
+    gap: 12px;
 }
 .meaning-platform{
-    font: var(--button-three);
+    font: var(--button-xs);
     color: var( --cyan-dark);
 }
 .block-main-title{
-    font: var(--heading-three);
+    font: var(--heading-l-two);
 }
 .block-title{
-    font: var(--heading-eight);
+    font: var(--heading-m-two);
 }
 .block-description{
-    font:var( --body-four);
+    font:var( --body-m-one);
     color: var(--grey-dark-one);
 }
-.ad-info-block-buttom{
-    padding: var(--padding-two);
+.main-info-block-buttom{
+    padding: var(--padding-buttom);
 }
 .block-buttom{
     border-radius: 100px;
     box-sizing: border-box;
 
 
-    font: var(--button-four);
+    font: var(--button-s);
     color: var(--cyan-dark);
-    padding: var(--padding-two);
+    padding: var(--padding-buttom);
     background-color: var(--cyan-light);
 }
-.ad-info-block-learning-points{
+.main-info-block-learning-points{
     display: flex;
     justify-content: center;
     
-    gap: var(--gap-two);
+    gap: 40px;
 }
 .popular-word, .mini-games{
     display: flex;
@@ -221,11 +224,11 @@
     flex-wrap: nowrap;
 }
 .popular-words-number-info,.mini-games-number-info{
-    font: var(--heading-four);
+    font: var(--heading-s);
 }
 .popular-words-icon, .mini-games-icon{
     color:var(--cyan-dark);
-    font: var(--heading-four);
+    font: var(--heading-s);
 }
 .popular-words-plus, .mini-games-plus{
     color:var(--cyan-dark);
@@ -236,14 +239,14 @@
 .points-divider{
     border-left:1px solid var(--grey-medium);
 }
-.ad-info-block-game-points-conteiner{
-    padding: var(--padding-five);
+.main-info-block-game-points-conteiner{
+    padding: 4% 0 0 0;
 }
-.ad-info-block-game-points{
+.main-info-block-game-points{
     display: flex;
     justify-content: space-around;
 
-    padding: var(--padding-six);
+    padding: 20px 0 40px 0;
 }
 .sprint, .audio-call{
     position: relative;  
@@ -256,17 +259,25 @@
 .sprint-name {
     border-radius: 14px;
 
-    padding: var(--padding-seven);
-    font: var(--button-four);
+    padding: var(--padding-sprint-size);
+    font: var(--button-s);
     background-color: var(--pink-light);
+    color: var(--pink-dark);
+}
+.sprint-name-arrow{
+    font: var(--button-s);
     color: var(--pink-dark);
 }
 .audio-call-name{
     border-radius: 14px;
 
-    padding: var(--padding-eight);
-    font: var(--button-four);
+    padding: var(--padding-audio-call-size);
+    font: var(--button-s);
     background-color: var(--cyan-light);
+    color: var(--cyan-dark);
+}
+.audio-call-name-arrow{
+    font: var(--button-s);
     color: var(--cyan-dark);
 }
 .audio-call-img{
@@ -281,24 +292,24 @@
         display: flex;
         flex-direction: column;
         
-        gap: var(--gap-three);
+        gap: var(--gap-main-info-block);
         background-color: var(--grey-light);
-        padding: var(--padding-nine);
+        padding: var(--padding-footer-up-down);
     }
     .footer-navigation{
         display: flex;
 
-        gap: var(--gap-five);
-        padding: var(--padding-ten);
+        gap: 115px;
+        padding: var(--padding-footer);
     }
     .footer-navigation-site-page, .footer-navigation-tutors{
         display: flex;
         flex-direction: column;
 
-        gap: var(--gap-six);
+        gap: var(--gap-footer-list);
     }
     .site-page-component, .tutors-component{
-        font: var(--body-seven);
+        font: var(--body-m-three);
         color: var(--grey-dark-one);
     }
     .line {
@@ -311,22 +322,22 @@
         display: flex;
         justify-content: center;
         
-        gap: var(--gap-seven);
+        gap: 31px;
     }
     .github, .gt, .youtube{
         color: var(--grey-icon);
-        font: var(--heading-eight);
+        font: var(--heading-l-one);
     }
     .company-info{
         text-align: center;
 
-        font: var(--body-eight);
+        font: var(--body-s);
         color: var(--grey-dark-one);
     }
     .globaltalk-link{
         text-decoration-line:underline;
 
-        font: var(--body-eight);
+        font: var(--body-s);
         color: var(--grey-dark-one);
     }
 /*menu_page*/
@@ -342,13 +353,13 @@
         justify-content: center;
         flex-direction: column;
 
-        gap: var(--gap-seven);
+        gap: 31px;
     }
     .site-menu-blok-components{
         text-align: center;
     }
     .site-menu-blok-components-link{
-        font:  var( --body-nine);
+        font:  var( --body-xl-two);
         color: var(--grey-dark-one);
     }
     .site-menu-blok-components-link.active{
