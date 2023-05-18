@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*Colors*/
+    --dark-grey: #1E1E1E ;
+    --grey:#383838;
+    --light-grey:#444444;
+    --light-hover-gray:#636363;
+
+    --wight: #FFFFFF;
+    
+    /*Fonts*/
+    --big-buttom-and-output: 400 30px/34px 'Times';
+    --small-buttom: 400 16px/18px 'Times';
+    --description: 400 18px/21px 'Times';
+
+    /*Other*/
+    --border-radius-small: 20px;
+    --border-radius-big: 50px;
+    
+}
+
+body{
+    background-color:var(--dark-grey);
+    text-decoration: none;
+}
+
+.Main-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Mein-content-conteiner{
+    border: 1px solid var(--light-grey);
+    border-radius: var( --border-radius-small);
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+    padding: 57px 74px;
+}
+.Random-number-generator-button, .Sort-number-button{
+    border: 1px solid var(--light-grey);
+    border-radius: var(--border-radius-big);
+    background-color: var(--light-grey);
+    color:var(--wight);
+    font:var(--big-buttom-and-output);
+
+    padding: 32px 107px;
+}
+.Random-number-generator-button:hover, .Sort-number-button:hover{
+    background-color: var(--light-hover-gray);
+}
+.Random-number-discription{
+    font:var(--description);
+    color:var(--wight);
+
+    margin: 18px 0 50px;
+}
+.Generated-random-numbers, .Sorted-numbers{
+    border: 1px solid var(--light-grey);
+    border-radius: var(--border-radius-small);
+    color:var(--wight);
+    font:var(--big-buttom-and-output);
+
+    box-sizing: border-box; 
+    max-width: 500px;
+    padding: 7px 44px
+}  
+.Sort-number-coneiner{
+    display: flex;
+    gap:35px;
+    flex-direction:column;
+    align-items: center;
+    
+} 
+.dropdown-Sort-metod-buttom{
+    background: var(--grey);
+    border: 1px solid var(--light-grey);
+    border-radius: var(--border-radius-big);
+    color: var(--wight);
+    font: var(--small-buttom);
+
+    padding: 6px 29px;
+    text-align: center;
+    width: max-content;
+	box-sizing: border-box;
+    text-decoration: none;
+}
+.dropdown-Sort-metod-buttom-name{
+    background: var(--grey) url(list-mark.png);
+
+    background-repeat: no-repeat;
+    background-position: 0 ;
+    padding: 0 0 0 16px;
+    
+}
+
+.Generated-random-numbers{
+    display: block;
+}
+.Sorted-numbers{
+    display: block;
+}
