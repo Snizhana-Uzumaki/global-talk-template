@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="task.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Numbers Sorter</title>
 </head>
 <body>
-    <section class="Main-conteiner">
 
+    <section class="Main-content">
+        <div class="Mein-content-conteiner">
         <div class = "Random-number-coneiner">
-            <button class = "Random-number-generator-button">
+            <button onclick="myFunction()" class = "Random-number-generator-button">
                 Generate 20 integers
             </button>
             <p class="Random-number-discription"> between 1 and 100</p>
             <div class="Generated-random-numbers">
-
+             1 2 32 45 68 93 54 3 6 8 22 34 67 12 45 78 100 4 67
             </div>
         </div>
 
         <div class="Sort-number-coneiner">
-            <button class="dropdown-Sort-metod-buttom"> 
-                Choose a sort method
-            </button>
+            <a href= "#" class="dropdown-Sort-metod-buttom"> 
+                <span class="dropdown-Sort-metod-buttom-name">Choose a sort method</span>
+            </a>
             <div class="dropdown-Sort-metod-content">
-                <a class="Sort-metod" href="#"> Bubble Sort</a>
+                <a class="Sort-metod" href="#"> <span>Bubble Sort</span></a>
                 <a class="Sort-metod" href="#">Selection Sort</a>
                 <a class="Sort-metod" href="#">Selection Sort</a>
             </div>
@@ -32,10 +35,10 @@
                 Sort integers
             </button>
             <div  class="Sorted-numbers">
-
+                1 2 32 45 68 93 54 3 6 8 22 34 67 12 45 78 100 4 67
             </div>
         </div>
-        
+    </div>
     </section>
 </body>
 </html>
