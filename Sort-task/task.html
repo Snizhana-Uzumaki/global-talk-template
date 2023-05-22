@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="task.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numbers Sorter</title>
 </head>
@@ -13,16 +12,13 @@
     <section class="Main-content">
         <div class="Mein-content-conteiner">
         <div class = "Random-number-coneiner">
-            <button onclick="myFunction()" class = "Random-number-generator-button">
-                Generate 20 integers
-            </button>
+            <button id="button" class = "Random-number-generator-button">Generate 20 integers</button>
             <p class="Random-number-discription"> between 1 and 100</p>
-            <div class="Generated-random-numbers">
-             1 2 32 45 68 93 54 3 6 8 22 34 67 12 45 78 100 4 67
+            <div id = "result" class="Generated-random-numbers">
             </div>
         </div>
 
-        <div class="Sort-number-coneiner">
+        <div class="Sort-number-coneiner" id="Sort-number-coneiner">
             <a href= "#" class="dropdown-Sort-metod-buttom"> 
                 <span class="dropdown-Sort-metod-buttom-name">Choose a sort method</span>
             </a>
@@ -40,6 +36,10 @@
         </div>
     </div>
     </section>
+    <script src="task.js"></script>
+    <script>
+     RandomNumber();
+    </script>
 </body>
 </html>
 
