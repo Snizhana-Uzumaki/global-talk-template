@@ -19,27 +19,23 @@
         </div>
 
         <div class="Sort-number-coneiner" id="Sort-number-coneiner">
-            <a href= "#" class="dropdown-Sort-metod-buttom"> 
-                <span class="dropdown-Sort-metod-buttom-name">Choose a sort method</span>
-            </a>
             <div class="dropdown-Sort-metod-content">
-                <a class="Sort-metod" href="#"> <span>Bubble Sort</span></a>
-                <a class="Sort-metod" href="#">Selection Sort</a>
-                <a class="Sort-metod" href="#">Selection Sort</a>
+                <select name="Sort" id="Sort-metod-list" class="dropdown-Sort-metod-buttom">
+                    <option class="Sort-metod" id="Bubble_sort" value="Bubble"> Bubble Sort</option>
+                    <option class="Sort-metod" id="Heapsort" value="Heapsort">Heapsort</option>
+                </select>  
             </div>
-            <button class = "Sort-number-button">
+            <button class = "Sort-number-button" id = "button1">
                 Sort integers
             </button>
-            <div  class="Sorted-numbers">
-                1 2 32 45 68 93 54 3 6 8 22 34 67 12 45 78 100 4 67
+            <div  class="Sorted-numbers" id="sort">
+               
             </div>
         </div>
+        
     </div>
     </section>
     <script src="task.js"></script>
-    <script>
-     RandomNumber();
-    </script>
 </body>
 </html>
 
