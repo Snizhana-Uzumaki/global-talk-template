@@ -13,8 +13,8 @@
     --wight: #FFFFFF;
     
     /*Fonts*/
-    --big-buttom-and-output: 400 30px/34px 'Times';
-    --small-buttom: 400 16px/18px 'Times';
+    --big-button-and-output: 400 30px/34px 'Times';
+    --small-button: 400 16px/18px 'Times';
     --description: 400 18px/21px 'Times';
 
     /*Other*/
@@ -51,11 +51,11 @@ body{
     border-radius: var(--border-radius-big);
     background-color: var(--light-grey);
     color:var(--wight);
-    font:var(--big-buttom-and-output);
+    font:var(--big-button-and-output);
 
     padding: 32px 107px;
 }
-.Random-number-generator-button:hover, .Sort-number-button:hover, .dropdown-Sort-metod-buttom:hover{
+.Random-number-generator-button:hover, .Sort-number-button:hover, .dropdown-Sort-metod-button:hover{
     background-color: var(--light-hover-gray);
 }
 .Random-number-discription{
@@ -69,12 +69,12 @@ body{
     border: 1px solid var(--light-grey);
     border-radius: var(--border-radius-small);
     color:var(--wight);
-    font:var(--big-buttom-and-output);
+    font:var(--big-button-and-output);
 
     box-sizing: border-box; 
     max-width: 500px;
     padding: 7px 44px;
-    word-break:break-all;
+    white-space:pre-line;
 }  
 .Sort-number-coneiner{
     display: none;
@@ -83,12 +83,12 @@ body{
     align-items: center;
     
 } 
-.dropdown-Sort-metod-buttom{
+.dropdown-Sort-metod-button{
     background: var(--grey) url(list-mark.png);
     border: 1px solid var(--light-grey);
     border-radius: var(--border-radius-big);
     color: var(--wight);
-    font: var(--small-buttom);
+    font: var(--small-button);
 
     padding: 6px 29px 6px 35px;
     text-align: center;
@@ -131,7 +131,7 @@ body{
     padding: 12px 16px;
     display: block;
     text-decoration: none;
-    font:var(--small-buttom);
+    font:var(--small-button);
     color: var(--wight);
     border-bottom: 1px solid var(--grey);
 }
