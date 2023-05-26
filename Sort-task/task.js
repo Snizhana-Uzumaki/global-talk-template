@@ -64,13 +64,16 @@ function HeapSort(result) {
       t = result[n];  
       result[n] = result[0];
     }        
-    j = i;  k = j*2+1;
+    j = i;  
+    k = j*2+1;
     while (k < n){ 
       if (k+1 < n && result[k+1] > result[k]){
         k++;
       }
       if (result[k] > t){ 
-        result[j] = result[k];  j = k;  k = j*2+1; 
+        result[j] = result[k];  
+        j = k;  
+        k = j*2+1; 
       }
       else break;
     }
